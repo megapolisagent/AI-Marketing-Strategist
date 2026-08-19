@@ -38,9 +38,16 @@ allowed-tools: Read, Write, Edit, Glob, Grep, Agent, AskUserQuestion
 
 Если актив (Business Assets, `HOME.md`) устарел или отсутствует — способность, которая его создаёт/обновляет, входит в очередь. Граф ацикличен: Audience → Positioning → Messaging → Brand.
 
-### 5. Сбор данных — по способности
+### 5. Сбор данных — по способности, с проверенной методологией
 
-Спрашивай владельца напрямую, не выдумывай. Если решение крупное — узкий бриф агенту-специалисту с критерием достаточности, зафиксированным до вызова (тот же формат, что у Engineer↔Researcher).
+Не изобретай метод на ходу — по каждой способности есть верифицированная методология (исследовано и подтверждено 2026-08-19, `ENGINEER/workspace/2026-08-19-задача-маркетолог-агент.md`):
+
+- **Audience Research** — `references/audience-research.md` (Moesta Switch Interview / Ulwick ODI / Bourgoin Trigger Technique — выбирай по задаче: качественный причинный инсайт vs количественная приоритизация vs быстрая кампания).
+- **Positioning & Category Definition** — `references/positioning.md` (Dunford 10 шагов — дефолт; Category Design — только если реально новая категория, не по умолчанию).
+- **Messaging & Persuasion Design** — `Skill System/skills/conversion-method/SKILL.md` (разовый конверсионный текст) — не дублируй, дополняй, если формат сообщения шире одного конверсионного текста.
+- **Brand Strategy & Equity Management** — `references/brand-strategy.md` (Aaker Identity Model как основной метод + обязательный корректирующий чек Sharp/Ehrenberg-Bass перед финализацией).
+
+Данные о самом бизнесе владельца — спрашивай напрямую, не выдумывай. Если решение крупное — узкий бриф агенту-специалисту с критерием достаточности, зафиксированным до вызова (тот же формат, что у Engineer↔Researcher).
 
 ### 6. GTM/Лидогенерация — не отдельный шаг
 
@@ -63,4 +70,8 @@ allowed-tools: Read, Write, Edit, Glob, Grep, Agent, AskUserQuestion
 
 ## Integration-происхождение
 
-Операционный цикл и Responsibility-матрица — перенос без изменения логики из `AI_OS/specializations/marketing_agent.md` v1.4 (Фаза 1 закрыта там, реализация — здесь, впервые). GTM-резолюция — из `ENGINEER/workspace/agent-runs/2026-08-19-marketing-strategy-agent-domain-research.md`. Формат вывода (текст, не таблицы) и реальный вызов специалиста — решения владельца, `grilling` 2026-08-19 (`DECISIONS.md`). Статус `DRAFT` — ни разу не проверено на реальном деле.
+Операционный цикл и Responsibility-матрица — перенос без изменения логики из `AI_OS/specializations/marketing_agent.md` v1.4 (Фаза 1 закрыта там, реализация — здесь, впервые). GTM-резолюция (первый прогон, риелторский пример) — из `ENGINEER/workspace/agent-runs/2026-08-19-marketing-strategy-agent-domain-research.md`, по прямому слову владельца **не встроена как правило** — держится только как непривязанный пример, каналы лидогенерации агент исследует заново под каждый новый бизнес.
+
+Методология трёх из четырёх способностей (Audience Research, Positioning, Brand Strategy — `references/`) — исследована и верифицирована 2026-08-19, по прямому требованию владельца («директор — это сильные знания», не только название источника). Четвёртая (Messaging) — частично закрыта существующим `Skill System/skills/conversion-method`, не дублировалась.
+
+Формат вывода (текст, не таблицы) и реальный вызов специалиста — решения владельца, `grilling` 2026-08-19 (`DECISIONS.md`). Статус `DRAFT` — архитектура и методология собраны, ни разу не проверено на реальном деле владельца.
