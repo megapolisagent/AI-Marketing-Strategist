@@ -2,7 +2,7 @@
 name: marketing-strategy
 description: Разбирает бизнес владельца по 4 маркетинговым способностям (кто клиент, позиционирование, сообщение, бренд) — с нуля или узкий вопрос по одной способности. Используй, когда владелец просит разобрать маркетинг, понять целевую аудиторию, сформулировать позиционирование/УТП, или спрашивает про лидогенерацию/каналы продвижения.
 user-invocable: true
-allowed-tools: Read, Write, Edit, Glob, Grep, Agent, AskUserQuestion
+allowed-tools: Read, Write, Edit, Glob, Grep, Agent, AskUserQuestion, mcp__exa__web_search_exa, mcp__exa__web_fetch_exa, mcp__firecrawl__firecrawl_scrape, mcp__firecrawl__firecrawl_search
 ---
 
 # Marketing Strategy

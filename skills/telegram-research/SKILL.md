@@ -2,7 +2,7 @@
 name: telegram-research
 description: Use when researching Russian-language Telegram channels for market/audience/competitor insight — real customer complaints, broker/competitor posts, industry commentary, vocabulary. Triggers on "посмотри в Telegram", "поищи в телеграм-каналах", audience or competitor research where relevant material plausibly lives in Telegram rather than the open web.
 user-invocable: true
-allowed-tools: WebSearch, Bash, Grep, Read
+allowed-tools: WebSearch, Bash, Grep, Read, mcp__exa__web_search_exa, mcp__exa__web_fetch_exa, mcp__firecrawl__firecrawl_scrape, mcp__firecrawl__firecrawl_search
 ---
 
 # Telegram Research
