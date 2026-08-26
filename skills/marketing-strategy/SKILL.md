@@ -66,7 +66,11 @@ allowed-tools: Read, Write, Edit, Glob, Grep, Agent, AskUserQuestion, mcp__exa__
 
 ### 9. Сохрани
 
-`knowledge/businesses/<слаг>.md` — обновляется, не переписывается с нуля. Business Assets получают новое `current`-состояние.
+`knowledge/businesses/<слаг>.md` — обновляется, не переписывается с нуля. Business Assets получают новое `current`-состояние. Это **внутренний** рабочий файл — со всеми пометками ЗНАЮ/ПРЕДПОЛАГАЮ, источниками, ходом разбора. Не публикуется владельцу напрямую и не связан больше с визуальной доской (владелец, 2026-08-24 — раньше `Life OS Vault` смотрел прямо в эту папку через junction, из-за чего Мария видела сырой разбор со «со слов владельца»/`[УТОЧНИТЬ]` вместо готового документа; junction перенесён на `MAIN_ASSISTANT/knowledge/businesses/`).
+
+### 10. Отдай результат MAIN_ASSISTANT, не публикуй сама
+
+Единственный канал наружу — MAIN_ASSISTANT (`ENGINEER/COMMUNICATION.md`, тот же формат, что Engineer↔Researcher: отдаёшь итог в чат вызвавшей сессии или в этот же `knowledge/businesses/<слаг>.md`, читаемый MAIN_ASSISTANT read-only). MAIN_ASSISTANT сам решает, что из этого готово для владельца, чистит от меток и публикует в свой `knowledge/businesses/` — на доску и в разговор с Марией. Ты не пишешь в `Life OS Vault` напрямую и не решаешь сама, что показывать владельцу как готовое.
 
 ## Integration-происхождение
 
