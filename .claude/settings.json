@@ -1,5 +1,17 @@
 {
   "permissions": {
-    "allow": []
+    "allow": [],
+    "deny": [
+      "Read(./**/node_modules/**)",
+      "Read(./**/dist/**)",
+      "Read(./**/build/**)",
+      "Read(./**/__pycache__/**)",
+      "Read(./**/.venv/**)",
+      "Read(./**/venv/**)",
+      "Read(./**/vendor/**)",
+      "Read(./**/*.min.js)",
+      "Read(./**/package-lock.json)",
+      "Read(./**/poetry.lock)"
+    ]
   }
 }
