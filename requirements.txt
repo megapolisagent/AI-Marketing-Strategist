@@ -1,0 +1,5 @@
+# Чтение внешних материалов (конкурентные отчёты, прайсы) — .venv, установить:
+#   .venv/Scripts/python.exe -m pip install -r requirements.txt
+python-docx>=1.2
+pypdf>=6.0
+openpyxl>=3.1
