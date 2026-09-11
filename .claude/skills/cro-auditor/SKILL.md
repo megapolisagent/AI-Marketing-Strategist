@@ -173,7 +173,9 @@ For each recommendation, provide:
 
 ## Integration with Other Skills
 
-- **google-analytics** — Pull conversion data to ground CRO recommendations in real metrics
-- **landing-page-optimizer** — Deep-dive on specific landing pages (when built)
-- **a-b-testing-framework** — Design and analyze tests for CRO recommendations (when built)
-- **pro-report-builder** — Generate professional CRO audit deliverable
+Проверено против реального состава `.claude/skills/` этого агента 2026-09-11.
+
+- **`google-analytics`** — Pull conversion data to ground CRO recommendations in real metrics (в этой установке не существует — веб-аналитику приносит владелец/специалист текстом, см. `performance-report`, ветка «If not connected»)
+- **`landing-page-optimizer`** — Deep-dive on specific landing pages (when built — не установлен)
+- **`a-b-testing-framework`** — Design and analyze tests for CRO recommendations (when built — не установлен)
+- **`pro-report-builder`** — Generate professional CRO audit deliverable (в этой установке не существует)

@@ -5,9 +5,11 @@ metadata:
   version: 2.0.0
 ---
 
-> Перенесено 2026-09-04 (владелец → ENGINEER) из `coreyhaines31/marketingskills` (GitHub, MIT license) как справочный материал для AI Marketing Strategist — по рекомендации независимого разбора Кодекса (аудит 15 скиллов). Не подключено как активный Skill — лежит в общей библиотеке до явного решения владельца/маркетолога.
+> Перенесено 2026-09-04 (владелец → ENGINEER) из `coreyhaines31/marketingskills` (GitHub, MIT license) для AI Marketing Strategist — по рекомендации независимого разбора Кодекса (аудит 15 скиллов).
 >
-> **Пробел донора**: тело ссылается на `references/benchmarks.md` и `references/format-guide.md`, но папка `references/` физически отсутствует уже в исходном импорте — файлы не были перенесены. Ссылки оставлены как есть (не выдуман контент взамен), пробел зафиксирован здесь явно.
+> **Исправлено Engineer 2026-09-11**: заголовок раньше утверждал «не подключено как активный Skill — ждёт явного решения владельца/маркетолога», хотя файл физически лежит в рабочей `.claude/skills/` и уже используется как критерий приёмки в `.claude/rules/delegation-protocol.md` (§4, «Лид-магнит / вход в воронку»). Либо решение подключить принято и не зафиксировано, либо подключение произошло без него — по факту на сегодня скилл активен, статус исправлен на реальный, не на декларативный.
+>
+> **Пробел донора (не исправлено — честно оставлено как есть)**: тело ссылается на `references/benchmarks.md` и `references/format-guide.md`, но папка `references/` физически отсутствует уже в исходном импорте — файлы не были перенесены. Также тело ссылается на добрый десяток донорских скиллов (`free-tools`, `copywriting`, `emails`, `popups`, `content-strategy`, `analytics`, `ads`, `social` и др. по тексту «See X»), которых в этой установке `.claude/skills/` не существует — они не были частью переноса. Не исправлено построчно (радиус правки), но зафиксировано здесь явно: любое «See X» ниже, кроме `cro-auditor` (исправлено — донор называл его коротким «cro»), скорее всего ведёт в никуда.
 
 # Lead Magnets
 
@@ -16,7 +18,7 @@ You are an expert in lead magnet strategy. Your goal is to help plan lead magnet
 ## Before Planning
 
 **Check for product marketing context first:**
-If `.agents/product-marketing.md` exists (or `.claude/product-marketing.md`, or the legacy `product-marketing-context.md` filename, in older setups), read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+В этом доме контекст бизнеса живёт в `knowledge/businesses/<слаг>.md` (см. `PROFILE.md` за слагом) — прочитай его перед вопросами, не `.agents/product-marketing.md` (донорский путь, не существует в этой установке). Используй то, что там уже есть, спрашивай только то, чего не хватает конкретно для этой задачи.
 
 Gather this context (ask if not provided):
 
@@ -151,7 +153,7 @@ Rule of thumb: Ask for the minimum needed. Every extra field reduces conversion 
 - Add social proof: "Downloaded by 5,000+ marketers"
 - Reduce risk: "No spam. Unsubscribe anytime."
 
-**For form optimization**: See **cro** skill
+**For form optimization**: See **cro-auditor** skill
 **For popup implementation**: See **popups** skill
 
 ---
@@ -167,7 +169,7 @@ Rule of thumb: Ask for the minimum needed. Every extra field reduces conversion 
 5. **Form** — Minimal fields, clear CTA button
 6. **FAQ** — Address hesitations (Is it really free? What format?)
 
-**For landing page optimization**: See **cro** skill
+**For landing page optimization**: See **cro-auditor** skill
 
 ### Delivery Methods
 
@@ -302,13 +304,12 @@ When creating a lead magnet strategy, provide:
 
 ## Related Skills
 
-- **free-tools**: For interactive tools as lead magnets (calculators, graders, quizzes)
-- **copywriting**: For writing the lead magnet content itself
-- **emails**: For nurture sequences after lead capture
-- **cro**: For optimizing lead magnet landing pages
-- **popups**: For popup-based lead capture
-- **cro**: For optimizing capture forms
-- **content-strategy**: For content planning and topic selection
-- **analytics**: For measuring lead magnet performance
-- **ads**: For paid promotion of lead magnets
-- **social**: For social media promotion
+Проверено против реального состава `.claude/skills/` этого агента 2026-09-11 — из всего донорского
+списка реально установлен только один:
+
+- **`cro-auditor`**: For optimizing lead magnet landing pages and capture forms
+
+Остальное (`free-tools`, `copywriting`, `emails`, `popups`, `content-strategy`, `analytics`, `ads`,
+`social`) в этой установке не существует — задача по этим направлениям идёт через `.claude/rules/
+delegation-protocol.md` (специалисту-исполнителю) или как новая потребность через капитал Engineer
+(`.claude/rules/capability-resolver.md`), не через несуществующий скилл.

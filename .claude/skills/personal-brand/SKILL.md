@@ -2,16 +2,34 @@
 name: personal-brand
 description: Build a personal brand strategy for founders, executives, creators, and consultants. Use when the user says "personal brand", "personal branding", "build my brand", "founder brand", "executive brand", "thought leadership", "I want to be known for", "grow my personal brand", "LinkedIn presence", "creator brand", "consultant brand", "personal brand strategy", "position myself", "what should I be known for", or wants to establish credibility, grow an audience, or become a recognized voice in their industry.
 metadata:
-  version: 1.0.0
+  version: 1.1.0
 ---
+
+> Адаптировано Engineer 2026-09-11: донор-версия (v1.0.0) была написана только под сценарий
+> «построить бренд с нуля» и проверяла контекст по пути `.agents/brand-context.md`, которого в этом
+> доме не существует (конвенция здесь — `.claude/`, не `.agents/`, см. `CLAUDE.md` §8). Для этого
+> конкретного владельца личный бренд УЖЕ существует (готовый TOV v3.1, PROFILE.md) — сценарий
+> «с нуля» здесь неприменим целиком, нужен режим «аудит + интеграция», которого у донора не было.
+> Добавлен явный шаг 0 ниже и исправлены мёртвые ссылки в «Related Skills».
 
 # Personal Brand
 
 You are a personal branding strategist. Your job is to help an individual — founder, executive, creator, or consultant — define what they stand for, who they're for, and how to show up consistently so the right people know them for the right things.
 
-## Before You Start
+## Step 0 — Существующий бренд или с нуля?
 
-Check if `.agents/brand-context.md` exists. If this is for a founder building alongside a company brand, read it for context on how the personal brand should relate to the business brand.
+Прежде чем идти по шагам ниже — проверь `knowledge/businesses/<слаг владельца>.md` и спроси владельца
+напрямую: личный бренд уже существует (TOV, фреймворк контента, позиционирование) или строится с нуля?
+
+- **Уже существует** (это и есть текущий случай — см. `PROFILE.md`, TOV v3.1) — не пересобирай с нуля.
+  Режим работы: **аудит + интеграция**, не «01–09» по порядку. Прочитай существующий TOV/фреймворк
+  целиком, сверь с Positioning/Brand бизнеса (`.claude/skills/marketing-strategy/references/
+  brand-strategy.md`, раздел «Brand as Person» — это и есть стык, не отдельная методология).
+  Результат — не новая стратегия, а явный список: что в существующем бренде уже согласовано с
+  бизнес-позиционированием, что расходится (и что раньше по этому расхождению), какого элемента
+  не хватает целиком (например, контент-пилларов под конкретный сегмент аудитории). Не изобретай
+  заново то, что владелец уже утвердил.
+- **С нуля** — тогда шаги 01–09 ниже применимы как есть, донор-методология для этого случая рабочая.
 
 ---
 
@@ -208,7 +226,10 @@ Don't be everywhere. Own one platform first.
 
 ## Related Skills
 
-- **brand-voice**: Verbal identity to inform personal communication style
-- **brand-messaging**: Messaging hierarchy for the personal brand
-- **brand-story**: Origin narrative for the founder's personal story
-- **brand-context**: If building alongside a company brand
+Проверено против реального состава `.claude/skills/` этого агента 2026-09-11 — донорские
+`brand-voice`/`brand-messaging`/`brand-story`/`brand-context` в этой установке не существуют,
+их функцию здесь закрывает один реальный файл:
+
+- **`.claude/skills/marketing-strategy/references/brand-strategy.md`** («Brand as Person») — стык
+  личного бренда с брендом бизнеса: verbal identity, messaging hierarchy, origin story — всё через
+  Aaker Identity Model этого же файла, не отдельными скиллами.
