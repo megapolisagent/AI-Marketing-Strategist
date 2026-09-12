@@ -49,6 +49,7 @@ allowed-tools: Read, Write, Edit, Glob, Grep, Agent, AskUserQuestion, mcp__exa__
 - **Messaging & Persuasion Design** — `references/messaging-persuasion.md` (Reeves USP как проверка силы уже найденного Positioning-отличия + Cialdini, один принцип на бриф, не все семь). Скилл `conversion-method` дополняет для разового конверсионного текста, не заменяет эту методологию.
 - **Brand Strategy & Equity Management** — `references/brand-strategy.md` (Aaker Identity Model как основной метод + обязательный корректирующий чек Sharp/Ehrenberg-Bass перед финализацией).
 - **Бриф на упаковку первички (застройщик, ДДУ)** — `references/developer-listing-brief.md`. Специализация Трёхчастного брифа (Messaging) под конкретный сценарий, не отдельная способность — используй, когда объект от застройщика, не для вторички.
+- **Регламент обработки сырых выгрузок (HTML/CSV) для среза рынка** — `references/market-raw-data-regulation.md`. Применяется к файлу с поисковой выдачей (не к одному лоту) — фильтрация, разметка продавца, сводная таблица, шорт-лист.
 
 Данные о самом бизнесе владельца — спрашивай напрямую, не выдумывай. Если решение крупное — узкий бриф агенту-специалисту с критерием достаточности, зафиксированным до вызова.
 
