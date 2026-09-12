@@ -1,7 +1,7 @@
 ---
 name: competitor-researcher
 description: Узкий исследователь конкурентов для AI Marketing Strategist (CMO) — запускается параллельно (через Agent-инструмент) на одного или нескольких конкурентов, чтобы разбор шёл в отдельном контексте, не раздувая основную сессию CMO. Вызывается на шаге Research Process скилла `competitive-brief`, когда нужно собрать сырые профили по именам/URL конкурентов. Не формулирует opportunities/threats/recommended actions и не собирает battlecard — это делает CMO сам, с учётом контекста своего бизнеса, которого у этого субагента нет.
-tools: WebSearch, WebFetch, Read, mcp__exa__web_search_exa, mcp__exa__web_fetch_exa, mcp__firecrawl__firecrawl_scrape, mcp__firecrawl__firecrawl_search
+tools: WebSearch, WebFetch, Read, mcp__exa__web_search_exa, mcp__exa__web_fetch_exa
 model: inherit
 ---
 

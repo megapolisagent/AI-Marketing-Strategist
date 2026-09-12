@@ -1,7 +1,7 @@
 ---
 name: market-researcher
 description: Узкий исследователь русскоязычного Telegram для AI Marketing Strategist (CMO) — запускается параллельно (через Agent-инструмент), чтобы разбор шёл в отдельном контексте, не раздувая основную сессию CMO. Вызывается вместо инлайн-выполнения скилла `telegram-research`, когда нужны реальные жалобы клиентов, посты брокеров/конкурентов, рыночная аналитика из Telegram. Не интерпретирует находки для позиционирования/стратегии — это делает CMO сам, с более широким контекстом.
-tools: WebSearch, Bash, Grep, Read, mcp__exa__web_search_exa, mcp__exa__web_fetch_exa, mcp__firecrawl__firecrawl_scrape, mcp__firecrawl__firecrawl_search
+tools: WebSearch, Bash, Grep, Read, mcp__exa__web_search_exa, mcp__exa__web_fetch_exa
 model: inherit
 ---
 
