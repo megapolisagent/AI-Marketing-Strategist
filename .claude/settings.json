@@ -1,6 +1,12 @@
 {
   "permissions": {
-    "ask": ["Agent"]
+    "defaultMode": "auto",
+    "ask": [
+      "Agent"
+    ],
+    "allow": [
+      "Edit(/.claude/skills/marketing-strategy/**)"
+    ]
   },
   "hooks": {
     "PreToolUse": [
