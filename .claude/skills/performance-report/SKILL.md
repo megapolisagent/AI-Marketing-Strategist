@@ -4,9 +4,9 @@ description: Build a marketing performance report with key metrics, trend analys
 argument-hint: "<time period or campaign>"
 ---
 
-> Перенесено 2026-09-10 (владелец → ENGINEER) из официального `anthropics/knowledge-work-plugins` (`marketing/skills/performance-report/SKILL.md`, GitHub, Apache-2.0) для AI Marketing Strategist — закрывает признанный самим агентом пробел («оценка эффективности уже идущих кампаний — открытый вопрос, не реализовано», README до этого переноса).
+> Источник: официальный `anthropics/knowledge-work-plugins` (`marketing/skills/performance-report/SKILL.md`, GitHub, Apache-2.0).
 >
-> **Пробел переноса, устранён 2026-09-14**: у донора Inputs §3 ссылался на MCP-коннекторы (HubSpot/Amplitude/Supermetrics и т.п.) и файл `CONNECTORS.md`, которых в этой установке не существует — таких коннекторов у AI Marketing Strategist нет. Раздел ниже сведён к единственной реально рабочей ветке: владелец/специалист приносит цифры текстом/таблицей.
+> У донора Inputs §3 ссылался на MCP-коннекторы (HubSpot/Amplitude/Supermetrics и т.п.) и файл `CONNECTORS.md`, которых в этой установке не существует — таких коннекторов у AI Marketing Strategist нет. Раздел ниже сведён к единственной реально рабочей ветке: владелец/специалист приносит цифры текстом/таблицей.
 
 # Performance Report
 

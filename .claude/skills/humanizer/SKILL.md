@@ -10,16 +10,12 @@ metadata:
   version: "2.11.2"
 ---
 
-> Перенесено 2026-09-04 (владелец → ENGINEER) из `blader/humanizer` (GitHub, MIT license,
-> оригинал: `references/LICENSE-original`) — прямая связь с уже существующей проблемой этого дома
-> (Tone of Voice, Data Sourcing Guard, «штампы» — Behavioral Contract, `ENGINEER/skills/
-> repository-design/SKILL.md`). **Статус исправлен 2026-09-14**: заголовок раньше утверждал «не
-> подключено как активный Skill ни одному агенту», хотя файл физически лежит в рабочей
-> `.claude/skills/` и уже используется как критерий приёмки в `.claude/rules/delegation-protocol.md`
-> (§4, «Текст — не звучит ли как ИИ») и `CLAUDE.md` §5 — по факту на сегодня скилл активен, как и
-> `lead-magnets` в своё время (тот же класс расхождения, исправлен там же Engineer 2026-09-11).
-> Оригинальный текст ниже не переведён и не адаптирован под дом — сохранён как первоисточник,
-> оригинальный `scripts/validate-package.py` — в `references/`.
+> Источник: `blader/humanizer` (GitHub, MIT license, оригинал: `references/LICENSE-original`) —
+> прямая связь с уже существующей проблемой этого дома (Tone of Voice, Data Sourcing Guard,
+> «штампы» — Behavioral Contract, `ENGINEER/skills/repository-design/SKILL.md`). Активный Skill:
+> используется как критерий приёмки в `.claude/rules/delegation-protocol.md` (§4, «Текст — не
+> звучит ли как ИИ») и `CLAUDE.md` §5. Оригинальный текст ниже не переведён и не адаптирован под
+> дом — сохранён как первоисточник, оригинальный `scripts/validate-package.py` — в `references/`.
 
 # Humanizer: remove AI writing patterns
 

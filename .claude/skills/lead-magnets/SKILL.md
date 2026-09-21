@@ -5,11 +5,9 @@ metadata:
   version: 2.0.0
 ---
 
-> Перенесено 2026-09-04 (владелец → ENGINEER) из `coreyhaines31/marketingskills` (GitHub, MIT license) для AI Marketing Strategist — по рекомендации независимого разбора Кодекса (аудит 15 скиллов).
+> Источник: `coreyhaines31/marketingskills` (GitHub, MIT license). Активный Skill — критерий приёмки в `.claude/rules/delegation-protocol.md` (§4, «Лид-магнит / вход в воронку»).
 >
-> **Исправлено Engineer 2026-09-11**: заголовок раньше утверждал «не подключено как активный Skill — ждёт явного решения владельца/маркетолога», хотя файл физически лежит в рабочей `.claude/skills/` и уже используется как критерий приёмки в `.claude/rules/delegation-protocol.md` (§4, «Лид-магнит / вход в воронку»). Либо решение подключить принято и не зафиксировано, либо подключение произошло без него — по факту на сегодня скилл активен, статус исправлен на реальный, не на декларативный.
->
-> **Пробел донора, устранён 2026-09-14**: тело ссылалось на `references/benchmarks.md` и `references/format-guide.md` (папка `references/` физически отсутствует, не перенесена из донора) и на добрый десяток донорских скиллов (`free-tools`, `copywriting`, `emails`, `popups`, `content-strategy`, `analytics`, `ads`, `social`), которых в этой установке `.claude/skills/` не существует. Мёртвые ссылки убраны построчно — реально существующая `cro-auditor` осталась. Функции, которые донор относил к отсутствующим скиллам (написание контента, реклама, соцсети, попапы), в этом доме идёт через специалиста-исполнителя по `.claude/rules/delegation-protocol.md`, не через несуществующий скилл.
+> Донорские ссылки на `references/benchmarks.md`/`references/format-guide.md` и на несуществующие в этой установке скиллы (`free-tools`, `copywriting`, `emails`, `popups`, `content-strategy`, `analytics`, `ads`, `social`) убраны — реально существующая `cro-auditor` осталась. Функции, которые донор относил к отсутствующим скиллам (написание контента, реклама, соцсети, попапы), в этом доме идёт через специалиста-исполнителя по `.claude/rules/delegation-protocol.md`, не через несуществующий скилл.
 
 # Lead Magnets
 
@@ -296,8 +294,7 @@ When creating a lead magnet strategy, provide:
 
 ## Related Skills
 
-Проверено против реального состава `.claude/skills/` этого агента 2026-09-11 — из всего донорского
-списка реально установлен только один:
+Из всего донорского списка в реальном составе `.claude/skills/` этого агента установлен только один:
 
 - **`cro-auditor`**: For optimizing lead magnet landing pages and capture forms
 

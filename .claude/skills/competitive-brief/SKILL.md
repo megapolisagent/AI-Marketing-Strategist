@@ -4,9 +4,9 @@ description: Research competitors and generate a positioning and messaging compa
 argument-hint: "<competitor or market segment>"
 ---
 
-> Перенесено 2026-09-10 (владелец → ENGINEER) из официального `anthropics/knowledge-work-plugins` (`marketing/skills/competitive-brief/SKILL.md`, GitHub, Apache-2.0) — заменяет `competitor-profiling` (coreyhaines31/marketingskills) у AI Marketing Strategist. Решение принято по построчному сравнению обоих файлов целиком (Deprecation Parity Gate): всё, что делал `competitor-profiling` (вход — список URL конкурентов, комбинация скрейпинга сайта с SEO/market-данными, выход — структурированный профиль), покрыто этим скиллом, потери функциональности не найдено — строгий суперсет (плюс messaging comparison matrix, content gap analysis, positioning map, battlecard creation).
+> Источник: официальный `anthropics/knowledge-work-plugins` (`marketing/skills/competitive-brief/SKILL.md`, GitHub, Apache-2.0) — строгий суперсет заменённого `competitor-profiling` (messaging comparison matrix, content gap analysis, positioning map, battlecard creation — сверх того, что умел старый скилл).
 >
-> **Пробел переноса**: ссылка ниже на `CONNECTORS.md` ведёт на файл из оригинального плагина Anthropic (`marketing/CONNECTORS.md`, описывает подключение MCP вроде HubSpot/Similarweb/Ahrefs) — этот файл не перенесён, у AI Marketing Strategist таких коннекторов сейчас нет (только Exa; Firecrawl был, удалён 2026-09-12 — не работал из-за той же проблемы конфигурации, что и Exa, но без рабочего отката). Ссылка оставлена как есть, не выдумана замена; при отсутствии этих MCP скилл работает через обычный WebSearch/WebFetch/Exa, просто без части «Research Sources» (SEO-инструменты, финансовые данные) в полном объёме.
+> **Известный пробел**: ссылка ниже на `CONNECTORS.md` ведёт на файл из оригинального плагина Anthropic (`marketing/CONNECTORS.md`, описывает подключение MCP вроде HubSpot/Similarweb/Ahrefs) — этот файл не перенесён, таких коннекторов у AI Marketing Strategist нет. Доступны Exa (по умолчанию) и Firecrawl (`.claude/rules/tool-preference.md`) — скилл работает через них, просто без части «Research Sources» (SEO-инструменты, финансовые данные) в полном объёме.
 
 # Competitive Brief
 
@@ -51,7 +51,7 @@ For each competitor, research using web search (по умолчанию `mcp__ex
 
 ### Research Sources
 
-**Инструмент для получения страницы (владелица, 2026-09-14):** `mcp__exa__web_fetch_exa` — первым выбором для любого сайта/каталога, не `WebFetch`. Проверено напрямую на официальном сайте застройщика (`alia.moscow/flats/`): WebFetch/ручные попытки давали пусто или домыслы на JS-рендеренных страницах, Exa отдала полную страницу с ценами. `WebFetch` регулярно проигрывает на таких сайтах — не пробовать его первым, держать для задач, где Exa недоступна или явно не подходит. Если URL с query-параметрами фильтров даёт `CRAWL_NON_CANONICAL` — убрать параметры, взять базовый URL раздела.
+**Инструмент для получения страницы** — `mcp__exa__web_fetch_exa` первым выбором для любого сайта/каталога, не `WebFetch` (`.claude/rules/tool-preference.md`). Если URL с query-параметрами фильтров даёт `CRAWL_NON_CANONICAL` — убрать параметры, взять базовый URL раздела.
 
 Gather intelligence from these categories of sources:
 

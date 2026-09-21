@@ -173,4 +173,4 @@ For each recommendation, provide:
 
 ## Integration with Other Skills
 
-Проверено против реального состава `.claude/skills/` этого агента 2026-09-11, устранено 2026-09-14: у донора было четыре пункта интеграции, ни один из соответствующих скиллов (`google-analytics`, `landing-page-optimizer`, `a-b-testing-framework`, `pro-report-builder`) в этой установке не существует — данные для аудита CRO приносит владелец/специалист текстом, см. `performance-report`, ветка «If not connected». Отдельного аналитического/тестового скилла нет — при реальной потребности см. `.claude/rules/capability-resolver.md`.
+Из четырёх пунктов интеграции донора ни один соответствующий скилл (`google-analytics`, `landing-page-optimizer`, `a-b-testing-framework`, `pro-report-builder`) в этой установке не существует — данные для аудита CRO приносит владелец/специалист текстом, см. `performance-report`, ветка «If not connected». Отдельного аналитического/тестового скилла нет — при реальной потребности см. `.claude/rules/capability-resolver.md`.
