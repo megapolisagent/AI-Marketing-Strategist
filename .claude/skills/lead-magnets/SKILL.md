@@ -1,6 +1,6 @@
 ---
 name: lead-magnets
-description: When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated content," "content upgrade," "downloadable," "ebook," "cheat sheet," "checklist," "template download," "opt-in," "freebie," "PDF download," "resource library," "content offer," "email capture content," "Notion template," "spreadsheet template," or "what should I give away for emails." Use this for planning what to create and how to distribute it. For interactive tools as lead magnets, see free-tools. For writing the actual content, see copywriting. For the email sequence after capture, see emails.
+description: When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated content," "content upgrade," "downloadable," "ebook," "cheat sheet," "checklist," "template download," "opt-in," "freebie," "PDF download," "resource library," "content offer," "email capture content," "Notion template," "spreadsheet template," or "what should I give away for emails." Use this for planning what to create and how to distribute it — writing the content itself and running distribution goes to the specialist agent per delegation-protocol.md, not to a sibling skill.
 metadata:
   version: 2.0.0
 ---
@@ -9,7 +9,7 @@ metadata:
 >
 > **Исправлено Engineer 2026-09-11**: заголовок раньше утверждал «не подключено как активный Skill — ждёт явного решения владельца/маркетолога», хотя файл физически лежит в рабочей `.claude/skills/` и уже используется как критерий приёмки в `.claude/rules/delegation-protocol.md` (§4, «Лид-магнит / вход в воронку»). Либо решение подключить принято и не зафиксировано, либо подключение произошло без него — по факту на сегодня скилл активен, статус исправлен на реальный, не на декларативный.
 >
-> **Пробел донора (не исправлено — честно оставлено как есть)**: тело ссылается на `references/benchmarks.md` и `references/format-guide.md`, но папка `references/` физически отсутствует уже в исходном импорте — файлы не были перенесены. Также тело ссылается на добрый десяток донорских скиллов (`free-tools`, `copywriting`, `emails`, `popups`, `content-strategy`, `analytics`, `ads`, `social` и др. по тексту «See X»), которых в этой установке `.claude/skills/` не существует — они не были частью переноса. Не исправлено построчно (радиус правки), но зафиксировано здесь явно: любое «See X» ниже, кроме `cro-auditor` (исправлено — донор называл его коротким «cro»), скорее всего ведёт в никуда.
+> **Пробел донора, устранён 2026-09-14**: тело ссылалось на `references/benchmarks.md` и `references/format-guide.md` (папка `references/` физически отсутствует, не перенесена из донора) и на добрый десяток донорских скиллов (`free-tools`, `copywriting`, `emails`, `popups`, `content-strategy`, `analytics`, `ads`, `social`), которых в этой установке `.claude/skills/` не существует. Мёртвые ссылки убраны построчно — реально существующая `cro-auditor` осталась. Функции, которые донор относил к отсутствующим скиллам (написание контента, реклама, соцсети, попапы), в этом доме идёт через специалиста-исполнителя по `.claude/rules/delegation-protocol.md`, не через несуществующий скилл.
 
 # Lead Magnets
 
@@ -88,8 +88,6 @@ Gather this context (ask if not provided):
 | Resource library | Ongoing value, return visits | High | Ongoing |
 | Free trial/community access | Product experience | Varies | Varies |
 
-**For detailed creation guidance per format**: See [references/format-guide.md](references/format-guide.md)
-
 ---
 
 ## Matching Lead Magnets to Buyer Stage
@@ -122,7 +120,7 @@ Goal: Help implement. Remove friction to purchase.
 | Template | "Ready-to-Use Sales Email Templates" |
 | Free trial | "14-Day Free Trial" |
 | Implementation guide | "Migration Checklist: Switch in 30 Minutes" |
-| ROI calculator | "Calculate Your Savings" (→ see **free-tools**) |
+| ROI calculator | "Calculate Your Savings" |
 
 ---
 
@@ -154,7 +152,6 @@ Rule of thumb: Ask for the minimum needed. Every extra field reduces conversion 
 - Reduce risk: "No spam. Unsubscribe anytime."
 
 **For form optimization**: See **cro-auditor** skill
-**For popup implementation**: See **popups** skill
 
 ---
 
@@ -202,14 +199,12 @@ Don't waste the thank you page. After they've converted:
 
 - Trigger on exit intent or scroll depth
 - Match the popup offer to the page content
-- **See popups** for implementation
 
 ### Social Media
 
 - Share snippets and teasers from the lead magnet
 - Create carousel posts from key points
 - Use the lead magnet as the CTA in your bio/profile
-- **See social** for social strategy
 
 ### Paid Promotion
 
@@ -217,7 +212,6 @@ Don't waste the thank you page. After they've converted:
 - Google Ads for high-intent lead magnets (templates, tools)
 - LinkedIn for B2B lead magnets
 - Retarget blog visitors with lead magnet ads
-- **See ads** for campaign strategy
 
 ### Partner Co-Promotion
 
@@ -239,8 +233,6 @@ Don't waste the thank you page. After they've converted:
 | **Lead-to-customer rate** | Lead quality | 1-5% (B2B), varies widely |
 | **Email engagement** | Content relevance | 30-50% open, 2-5% click |
 | **Time to conversion** | Nurture effectiveness | Track by lead magnet source |
-
-**For detailed benchmarks by format and industry**: See [references/benchmarks.md](references/benchmarks.md)
 
 ### A/B Testing Ideas
 

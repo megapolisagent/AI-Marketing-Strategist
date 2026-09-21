@@ -35,9 +35,13 @@ Gather the following from the user:
    - Pricing and packaging (if publicly available)
    - Market presence and audience
 
+## Чекпойнт перед стартом
+
+Прежде чем переходить к Research Process — сверить с входным гейтом (`CLAUDE.md`, §7): список конкурентов и фокус зафиксированы дословно и согласованы с владельцем (или это продолжение уже одобренного скоупа)? Если нет — сначала уточнение/подтверждение, не сбор данных. Дальше запуск `competitor-researcher` (если несколько конкурентов — параллельно, отдельным вызовом на каждого) технически потребует ручного подтверждения на уровне среды в любом случае — это не заменяет согласование фокуса, это отдельный барьер.
+
 ## Research Process
 
-For each competitor, research using web search:
+For each competitor, research using web search (по умолчанию `mcp__exa__web_search_exa`, не `WebSearch` — `.claude/rules/tool-preference.md`):
 
 1. **Company website** — homepage messaging, product pages, about page, pricing page
 2. **Recent news** — press releases, funding announcements, product launches, partnerships (last 6 months)
@@ -46,6 +50,8 @@ For each competitor, research using web search:
 5. **Job postings** — hiring signals that indicate strategic direction (optional)
 
 ### Research Sources
+
+**Инструмент для получения страницы (владелица, 2026-09-14):** `mcp__exa__web_fetch_exa` — первым выбором для любого сайта/каталога, не `WebFetch`. Проверено напрямую на официальном сайте застройщика (`alia.moscow/flats/`): WebFetch/ручные попытки давали пусто или домыслы на JS-рендеренных страницах, Exa отдала полную страницу с ценами. `WebFetch` регулярно проигрывает на таких сайтах — не пробовать его первым, держать для задач, где Exa недоступна или явно не подходит. Если URL с query-параметрами фильтров даёт `CRAWL_NON_CANONICAL` — убрать параметры, взять базовый URL раздела.
 
 Gather intelligence from these categories of sources:
 

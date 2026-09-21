@@ -6,7 +6,7 @@ argument-hint: "<time period or campaign>"
 
 > Перенесено 2026-09-10 (владелец → ENGINEER) из официального `anthropics/knowledge-work-plugins` (`marketing/skills/performance-report/SKILL.md`, GitHub, Apache-2.0) для AI Marketing Strategist — закрывает признанный самим агентом пробел («оценка эффективности уже идущих кампаний — открытый вопрос, не реализовано», README до этого переноса).
 >
-> **Пробел переноса**: строка ниже — «If you see unfamiliar placeholders... see CONNECTORS.md» — ссылается на файл оригинального плагина (`marketing/CONNECTORS.md`), который не перенесён; у AI Marketing Strategist таких MCP-коннекторов (HubSpot/Amplitude/Supermetrics и т.п.) сейчас нет. Строки «If ~~marketing analytics is connected...» / «If ~~product analytics is connected...» в разделе Inputs — так в оригинале донора (похоже на не до конца отрендеренный плейсхолдер плагина), оставлены как есть, не выдуман смысл взамен. Без подключённых коннекторов скилл работает по ветке «If not connected: ask the user to provide metrics» — принимает цифры от владельца текстом/таблицей.
+> **Пробел переноса, устранён 2026-09-14**: у донора Inputs §3 ссылался на MCP-коннекторы (HubSpot/Amplitude/Supermetrics и т.п.) и файл `CONNECTORS.md`, которых в этой установке не существует — таких коннекторов у AI Marketing Strategist нет. Раздел ниже сведён к единственной реально рабочей ветке: владелец/специалист приносит цифры текстом/таблицей.
 
 # Performance Report
 
@@ -27,10 +27,7 @@ User runs `/performance-report` or asks for a marketing report, performance anal
 
 2. **Time period** — the reporting window (last week, last month, last quarter, custom date range)
 
-3. **Data source**:
-   - If ~~marketing analytics is connected, discover what accounts and platforms are available, then pull performance data automatically
-   - If ~~product analytics is connected: pull performance data automatically
-   - If not connected: ask the user to provide metrics. Prompt with: "Please paste or share your performance data. I can work with spreadsheets, CSV data, dashboard screenshots described in text, or just the key numbers."
+3. **Data source** — коннекторов аналитики в этой установке нет: спросить владельца/специалиста напрямую. Prompt: "Please paste or share your performance data. I can work with spreadsheets, CSV data, dashboard screenshots described in text, or just the key numbers."
 
 4. **Comparison period** (optional) — prior period or year-over-year for trend context
 
